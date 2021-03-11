@@ -1,0 +1,1084 @@
+@charset "UTF-8";
+/* line 2, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 12, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .hamburger {
+  display: none;
+}
+
+/* line 15, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* a {
+  text-decoration: none;
+}
+
+/* line 18, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 24, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .menu_link {
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+/* line 29, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 32, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .menu_item:last-child {
+  border-right: none;
+}
+
+/* line 34, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 40, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 44, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader_official {
+  margin-top: 6px;
+  color: white;
+  opacity: 0.5;
+  font-style: 13px;
+  font-weight: 400;
+}
+
+/* line 50, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader_call {
+  margin-top: 19px;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: right;
+}
+
+/* line 56, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: white;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 65, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_mixin.sass */
+* .subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 81, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .promo {
+  min-height: 800px;
+  background: url("../img/uber_bg.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 85, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .promo_header {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 93, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .promo_subheader {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 102, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .promo_descr {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 109, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_mixin.sass */
+* .promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 125, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion {
+  min-height: 900px;
+  padding-top: 71px;
+}
+
+/* line 129, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .label {
+  position: relative;
+  margin: 0 auto;
+  width: 112px;
+  height: 24px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+/* line 143, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .label2 {
+  background-color: #ffffff;
+  color: #070716;
+  z-index: 2;
+}
+
+/* line 148, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .title {
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 156, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .title2 {
+  position: relative;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* line 161, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subtitle {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 19px;
+  z-index: 2;
+}
+
+/* line 171, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .subtitle2 {
+  position: relative;
+  color: #ffffff;
+}
+
+/* line 176, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion_items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 181, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion_block {
+  width: 343px;
+}
+
+/* line 183, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 192, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion_subheader {
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 196, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .occasion_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: justify;
+}
+
+/* line 203, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/mobile_bg.jpg") center center/cover no-repeat;
+}
+
+/* line 207, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile .row {
+  margin-top: 32px;
+}
+
+/* line 209, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 91px;
+}
+
+/* line 216, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_1 {
+  background: url("../img/App/App1.jpg") center center/cover no-repeat;
+}
+
+/* line 218, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_2 {
+  background: url("../img/App/App2.jpg") center center/cover no-repeat;
+}
+
+/* line 220, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_3 {
+  background: url("../img/App/App3.jpg") center center/cover no-repeat;
+}
+
+/* line 222, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_4 {
+  background: url("../img/App/App4.jpg") center center/cover no-repeat;
+}
+
+/* line 224, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_5 {
+  background: url("../img/App/App5.jpg") center center/cover no-repeat;
+}
+
+/* line 226, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_6 {
+  background: url("../img/App/App6.jpg") center center/cover no-repeat;
+}
+
+/* line 228, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* line 235, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* line 249, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_plus::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 255, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_plus::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+}
+
+/* line 265, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .mobile_items_plus:hover::before, * .mobile_items_plus:hover::after {
+  background-color: #ff5656;
+  transition: 0.3s all;
+}
+
+/* line 269, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .choice {
+  background: url("../img/foundation.jpg");
+  min-height: 895px;
+  position: relative;
+  padding: 57px 0 138px 0;
+}
+
+/* line 274, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .choice_img {
+  display: block;
+  position: relative;
+  z-index: 2;
+  margin: 56px auto 0 auto;
+}
+
+/* line 279, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .choice_black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 499px;
+  background-color: #070716;
+  z-index: 1;
+}
+
+/* line 288, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .choice_descr {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* line 294, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 296, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_block {
+  margin: 33px 0;
+}
+
+/* line 298, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_block_nmb {
+  margin-bottom: 0px;
+}
+
+/* line 300, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_title {
+  color: #1eacc7;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* line 304, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 308, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_list li {
+  position: relative;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+/* line 315, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_list li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.png") center center/cover no-repeat;
+}
+
+/* line 324, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require_descr {
+  color: #1ca8c3;
+  font-style: 22px;
+  font-weight: 300;
+}
+
+/* line 329, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 333, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .require .warning .require_list li::before {
+  content: '';
+  background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+/* line 337, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .world {
+  min-height: 717px;
+  background: url("../img/map.jpeg") center center/cover no-repeat;
+  padding: 49px 0;
+}
+
+/* line 341, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .world_link {
+  display: block;
+  text-align: center;
+  margin: 486px auto 0px auto;
+  color: #1fbad6;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 68px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 352, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* footer {
+  min-height: 148px;
+  padding: 14px 23px 31px 23px;
+}
+
+/* line 357, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_line {
+  width: 299px;
+  height: 4px;
+  background-color: #1eacc7;
+  margin: 0 auto;
+}
+
+/* line 362, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  align-items: flex-start;
+}
+
+/* line 367, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 369, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 372, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 376, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_social_item {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 384, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_social_item i {
+  color: #ffffff;
+}
+
+/* line 386, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 389, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 392, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 398, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 401, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  padding: 15px 0 19px 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 408, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_links_lang {
+  display: flex;
+  justify-content: center;
+  color: #1eacc7;
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 418, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .footer_mobile img {
+  width: 94px;
+}
+
+/* line 421, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_general.sass */
+* .xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 50px;
+  }
+  /* line 10, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 13, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_items {
+    align-items: flex-start;
+  }
+  /* line 15, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_round {
+    margin-right: 0;
+  }
+  /* line 17, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_block {
+    width: 300px;
+  }
+  /* line 20, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile_items {
+    width: 280px;
+  }
+  /* line 22, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile_items_subtitle {
+    font-size: 20px;
+  }
+  /* line 25, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_links {
+    width: 337px;
+  }
+  /* line 28, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(3) {
+    padding-right: 50px;
+  }
+  /* line 30, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 36, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 8px;
+  }
+  /* line 38, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 10px;
+  }
+  /* line 42, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_logo img {
+    width: 100%;
+  }
+  /* line 44, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_official {
+    font-size: 11px;
+  }
+  /* line 46, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    font-size: 19px;
+  }
+  /* line 48, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_btn {
+    margin-top: 21px;
+    width: 100%;
+    height: 41px;
+  }
+  /* line 53, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 38px;
+  }
+  /* line 55, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 24px;
+  }
+  /* line 58, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_items {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 61, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_block {
+    margin-top: 20px;
+  }
+  /* line 63, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_subheader {
+    text-align: center;
+  }
+  /* line 65, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .title {
+    font-size: 33px;
+  }
+  /* line 68, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile_items {
+    width: 220px;
+  }
+  /* line 70, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile_items_subtitle {
+    font-size: 19px;
+  }
+  /* line 73, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .choice img {
+    width: 100%;
+  }
+  /* line 76, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require_block {
+    margin: 20px 0;
+  }
+  /* line 78, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require_title {
+    font-size: 20px;
+  }
+  /* line 80, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require_list {
+    margin-top: 14px;
+  }
+  /* line 82, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require_list li {
+    font-size: 15px;
+  }
+  /* line 85, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 88, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div {
+    width: auto;
+  }
+  /* line 90, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(3) {
+    padding-right: 0;
+  }
+  /* line 92, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_mobile {
+    flex-direction: row;
+    align-items: baseline;
+  }
+  /* line 95, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_links {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 99, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s;
+  }
+  /* line 111, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_active {
+    left: 0;
+  }
+  /* line 113, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_item {
+    padding-right: 0;
+    border: none;
+    margin-top: 10px;
+  }
+  /* line 117, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu_link {
+    font-size: 20px;
+  }
+  /* line 119, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 127, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 2px;
+    transition: 0.5s all;
+  }
+  /* line 135, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 137, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 139, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 141, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 143, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .xs-hidden {
+    display: none;
+  }
+  /* line 145, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .xs-visible {
+    display: block;
+  }
+  /* line 148, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  /* line 156, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_btn {
+    display: block;
+    width: 200px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 163, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_header {
+    line-height: 43px;
+  }
+  /* line 165, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_descr {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 169, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * nav {
+    height: 30px;
+  }
+  /* line 171, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * header {
+    height: 30px;
+  }
+  /* line 173, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 176, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_official {
+    display: none;
+  }
+  /* line 178, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_logo {
+    margin-top: 17px;
+  }
+  /* line 180, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_phone {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  /* line 183, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_btn {
+    width: 113px;
+    height: 22px;
+    margin-top: 7px;
+    font-size: 10px;
+  }
+  /* line 188, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subheader_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 190, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo {
+    min-height: 400px;
+    padding: 100px 0 35px 0;
+  }
+  /* line 193, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_descr {
+    display: none;
+  }
+  /* line 195, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  /* line 198, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    line-height: 30px;
+  }
+  /* line 202, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin: 72px auto 0 auto;
+    font-size: 16px;
+  }
+  /* line 207, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .promo_btn:hover {
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  }
+  /* line 209, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .menu {
+    width: 85%;
+  }
+  /* line 211, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion {
+    padding: 22px 0 36px 0;
+  }
+  /* line 213, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_items {
+    margin-top: 26px;
+  }
+  /* line 215, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 218, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .occasion_subheader {
+    width: 100%;
+    margin-top: 20px;
+  }
+  /* line 221, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .title {
+    font-size: 15px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+  /* line 225, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile {
+    padding: 23px 0 43px 0;
+  }
+  /* line 227, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .mobile_items {
+    width: 100%;
+  }
+  /* line 229, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .choice {
+    min-height: 390px;
+    padding: 25px 0 33px 0;
+    background: #070716;
+  }
+  /* line 233, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .choice img {
+    margin-top: 35px;
+  }
+  /* line 235, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .choice_descr {
+    margin-top: 23px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+  }
+  /* line 241, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .choice_black {
+    display: none;
+  }
+  /* line 243, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require {
+    padding: 25px 0 26px 0;
+  }
+  /* line 245, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .require_block {
+    margin: 10px 0;
+  }
+  /* line 247, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .subtitle {
+    margin-top: 10px;
+  }
+  /* line 249, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .world {
+    min-height: 260px;
+    padding: 25px 0 30px 0;
+  }
+  /* line 252, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .world_link {
+    margin-top: 216px;
+  }
+  /* line 254, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * footer {
+    padding: 25px 23px 20px 23px;
+  }
+  /* line 257, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_line {
+    width: 253px;
+  }
+  /* line 259, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div {
+    margin-bottom: 16px;
+  }
+  /* line 261, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(1) {
+    order: 2;
+  }
+  /* line 263, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(2) {
+    order: 1;
+  }
+  /* line 265, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_wrapper > div:nth-child(3) {
+    order: 3;
+  }
+  /* line 267, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_links {
+    width: 290px;
+  }
+  /* line 269, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_links_sub {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 13px 0;
+  }
+  /* line 273, ../../../../../../../../../../../../../Users/a11/Documents/лабы  для Web/2021/ Uber/src/sass/_media.sass */
+  * .footer_links_sub a {
+    margin: 0 20px;
+    padding: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
